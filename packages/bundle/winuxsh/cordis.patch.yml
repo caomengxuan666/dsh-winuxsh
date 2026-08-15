@@ -1,0 +1,19 @@
+# Enable the Winuxsh shell provider and bash tool for Windows profiles.
+- id: pwsh-sandbox
+  name: '@deepseek-ai/dsh-pwsh-sandbox'
+  disabled: true
+
+- id: tool-bash
+  name: '@deepseek-ai/dsh-tool-bash'
+  disabled: false
+
+- id: tool-pwsh
+  name: '@deepseek-ai/dsh-tool-pwsh'
+  disabled: true
+
+- insert:
+    - id: winuxsh-sandbox
+      name: '@cmx666/dsh-winuxsh-sandbox'
+      disabled: false
+      config:
+        pwshPath: winuxsh
